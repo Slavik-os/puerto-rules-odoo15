@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+      <menuitem
+            id="main_menu"
+            name="Puerto transit"
+            sequence="0"/>
+
+    <menuitem
+            id="create_root_menu"
+            name="Create"
+            parent="main_menu"
+            sequence="0"/>
+
+<!--    Folders Create-->
+    <menuitem
+            id="menu_folders_master"
+            name="Folder"
+            parent="create_root_menu"
+            sequence="0"/>
+
+    <menuitem
+            id="create_folder"
+            name="Create folder"
+            action="action_create_folder"
+            parent="menu_folders_master"/>
+
+<!--    Rules Create-->
+    <menuitem
+            id="menu_rules_master"
+            name="Rules"
+            parent="create_root_menu"/>
+
+    <menuitem
+            id="create_rules"
+            name="Create Rules"
+            parent="menu_rules_master"
+            action="action_create_rules"/>
+
+
+</odoo>

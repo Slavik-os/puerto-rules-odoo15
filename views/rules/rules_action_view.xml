@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<!--  Action Menu -->
+        <record id="action_create_rules" model="ir.actions.act_window">
+                    <field name="name">Rules</field>
+                    <field name="res_model">rules.creation</field>
+                    <field name="view_mode">tree,form</field>
+                    <field name="context">{}</field>
+                    <field name="help" type="xml">
+                        <p class="o_view_nocontent_smiling_face">
+                            Create your first Rule !
+                        </p>
+                    </field>
+            </record>
+<!--  Action Menu End -->
+</odoo>

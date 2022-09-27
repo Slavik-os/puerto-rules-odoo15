@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<!--  Form  View  -->
+        <record id="view_invoice_list_controll_form" model="ir.ui.view">
+            <field name="name">invoice.list.controll.form</field>
+            <field name="model">invoice.list.controll</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="dum" />
+                </form>
+            </field>
+        </record>
+<!--  Form  View End -->
+
+</odoo>

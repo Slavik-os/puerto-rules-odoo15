@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<!--  Tree View  -->
+            <record id="view_folder_managment_tree" model="ir.ui.view">
+                <field name="name">folder.managment.tree</field>
+                <field name="model">folder.managment</field>
+                <field name="arch" type="xml">
+                    <tree decoration-success="priority == '0'"
+                          decoration-danger="priority == '2'">
+                          <field name="created_date" optional="show" />
+                          <field name="folder_type" optional="show" />
+                          <field name="n_dossier" optional="show"  />
+                          <field name="referance_tr" optional="show" string="Ref Transport"/>
+                          <field name="datetime_travel" optional="show" string="Date D'arrivee"/>
+                          <field name="destinataire" optional="show" />
+                          <field name="expiditeur" optional="show"  />
+                          <field name="proids_brut" optional="show" />
+                          <field name="number_colis" optional="show" />
+                          <field name="priority" optional="show" widget="priority"/>
+<!--                          <field name="priority" decoration-success="priority == '0'"-->
+<!--                                 decoration-warning = "priority == '1'"-->
+<!--                                 decoration-danger = "priority == '2'"-->
+<!--                                 decoration-muted = "priority == '3'"-->
+<!--                                 widget = 'priority'/>-->
+                          <field name="demond_traction" string="Date/Heure dedouanement" optional="show" />
+                          <field name="state" decoration-success="state == 'done'"
+                                              decoration-warning = "state == 'draft'"
+                                              decoration-danger = "state == 'cancel'"
+                                              decoration-muted = "state == 'in_consultation'"
+                                              widget = 'badge'/>
+                          <field name="designation_marchandise" string="Intitule Marchandises"/>
+                          <field name="mode_transport" string="Moyen Transport"/>
+                          <field name="observation" string="Observation"/>
+                          <field name="n_dum" string="Num sous dum"/>
+                          <field name="dum_start_date" string="Date dum Debuts"/>
+                          <field name="dum_end_date" string="Date dum fin"/>
+                    </tree>
+            </field>
+        </record>
+<!--  Tree View End -->
+</odoo>

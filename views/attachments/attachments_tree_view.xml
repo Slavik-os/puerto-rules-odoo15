@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<!--  Tree View  -->
+            <record id="view_attach_document_managment_tree" model="ir.ui.view">
+                <field name="name">attach.document.managment.tree</field>
+                <field name="model">attach.document.managment</field>
+                <field name="arch" type="xml">
+                    <tree>
+                          <field name="document_fname" />
+                          <field name="date_time_created" />
+                          <field name="comment" />
+                    </tree>
+            </field>
+        </record>
+<!--  Tree View End -->
+</odoo>

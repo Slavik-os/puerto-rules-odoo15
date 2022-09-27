@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<!--  Form  View  -->
+        <record id="view_rule_form" model="ir.ui.view">
+            <field name="name">rules.creation.form</field>
+            <field name="model">rules.creation</field>
+            <field name="arch" type="xml">
+                <form>
+                    <style>.resize{resize: both !important;}</style>
+                    <group>
+                        <group>
+                            <field name="rule_name"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="rules" class="resize"
+                               options="{'collaborative':true,'resizable':true}"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+<!--  Form  View End -->
+
+</odoo>
